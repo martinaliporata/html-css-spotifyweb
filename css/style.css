@@ -4,10 +4,31 @@
     box-sizing: border-box;
 }
 
+.flex {
+    display: flex;
+}
+
 header {
-    height: ;
-    width: ;
+    height: 100vh;
+    width: 10vw;
     background-color: #000000;
+    position: fixed;
+    color: white;
+    position: relative;
+}
+
+.menu img {
+    width: 15%;
+}
+
+.bottom-header .flex img {
+    width: 10%;
+}
+
+.bottom-header {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 main > .upgrade {
@@ -16,12 +37,15 @@ main > .upgrade {
 
 main {
     background-color: #141922;
-    height: ;
-    width: ;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
 }
 
+/* se tolgo fixed, torna a vedersi */
 footer {
     background-color: #282828;
-    height: ;
-    width: 100v;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
 }
