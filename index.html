@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <section class="flex">
@@ -17,11 +18,11 @@
                             <img src="imgs/home.svg" alt="">
                             <p>Home</p>
                         </li>
-                        <li class="flex">
+                        <li class="flex grey">
                             <img src="imgs/search.svg" alt="">
                             <p>Cerca</p>
                         </li>
-                        <li class="flex">
+                        <li class="flex grey">
                             <img src="imgs/libreria.svg" alt="">
                             <p>La tua libreria</p>
                         </li>
@@ -30,9 +31,9 @@
             </section>
             <section class="playlist">
                 <p>Playlist</p>
-                <i class="fa-solid fa-square-plus"></i><p>Crea Playlist</p>
+                <i class="fa-solid fa-square-plus"></i><p class="grey">Crea Playlist</p>
                 <nav>
-                    <ul>
+                    <ul class="grey">
                         <li>
                             Nome Playlist
                         </li>
@@ -59,7 +60,7 @@
             </section>
             <section class="bottom-header">
                 <div class="flex">
-                    <img src="imgs/download.svg" alt=""><p>Installa app</p>
+                    <img src="imgs/download.svg" alt=""><p class="grey">Installa app</p>
                 </div>
                 <hr>
                 <div class="flex">
@@ -68,147 +69,163 @@
             </section>
         </header>
         <main>
-            <button class="upgrade">
-                effettua l'upgrade
-            </button>
-            <section class="nav">
-                <ul>
-                    <li>
-                        In evidenza
-                    </li>
-                    <li>
-                        Podcast
-                    </li>
-                    <li>
-                        Classifiche
-                    </li>
-                    <li>
-                        Generi e mood
-                    </li>
-                    <li>
-                        Nuove uscite
-                    </li>
-                    <li>
-                        Scopri
-                    </li>
-                </ul>
+            <section class="top-main">
+                <button class="upgrade uppercase">
+                    effettua l'upgrade
+                </button>
             </section>
-            <section class="recently-played">
-                <h1>
-                    Recently played
-                </h1>
-                <section class="song">
-                    <img src="imgs/metal_lifting.jpg" alt="">
-                    <p>Heavy metal</p>
-                    <p>Subtitle</p>
+            <section class="central-main">
+                <section class="nav">
+                    <nav>
+                        <ul class="grey flex uppercase">
+                            <li>
+                                In evidenza
+                            </li>
+                            <li>
+                                Podcast
+                            </li>
+                            <li>
+                                Classifiche
+                            </li>
+                            <li>
+                                Generi e mood
+                            </li>
+                            <li>
+                                Nuove uscite
+                            </li>
+                            <li>
+                                Scopri
+                            </li>
+                        </ul>
+                    </nav>
                 </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
+                <section class="recently-played">
+                    <h1>
+                        Recently played
+                    </h1>
+                    <div class="flex justify">
+                        <section class="song">
+                            <img src="imgs/metal_lifting.jpg" alt="">
+                            <!-- <p>Heavy metal</p>
+                            <p class="grey">Subtitle</p> -->
+                        </section>
+                        <section class="song">
+                            <img src="imgs/stranger.jpeg" alt="">
+                            <!-- <p>Stranger Things, Vol. <br>1 (a Netflix Original <br>Series Soundtrack)</p>
+                            <p class="grey">Kyle Dixon &amp; Michael Stein</p> -->
+                        </section>
+                        <section class="song">
+                            <img src="imgs/aquietplace.jpeg" alt="">
+                            <!-- <p>A quiet place</p>
+                            <p class="grey">Subtitle</p> -->
+                        </section>
+                        <section class="song">
+                            <img src="imgs/split.jpeg" alt="">
+                            <!-- <p>Split</p>
+                            <p class="grey">Subtitle</p> -->
+                        </section>
+                        <section class="song">
+                            <img src="imgs/cure.jpeg" alt="">
+                            <!-- <p>A cure for wellness</p>
+                            <p class="grey">Subtitle</p> -->
+                        </section>
+                        <section class="song">
+                            <img src="imgs/sinister.jpeg" alt="">
+                            <!-- <p>Sinister</p>
+                            <p class="grey">Subtitle</p> -->
+                        </section>
+                    </div>
                 </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
+                <section class="john-doe">
+                    <h1>
+                        Creato per John Doe
+                    </h1>
+                    <h3 class="grey">
+                        Più ascolti, più accurati saranno i suggerimenti.
+                    </h3>
+                    <div class="flex justify">
+                        <section class="song">
+                            <img src="imgs/radar.jpeg" alt="">
+                            <p>Release Radar</p>
+                        </section>
+                        <section class="song">
+                            <img src="imgs/mixdaily.jpeg" alt="">
+                            <p>Daily Mix 1</p>
+                        </section>
+                    </div>
                 </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
-                </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
-                </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
-                </section>
-            </section>
-            <section class="john-doe">
-                <h1>
-                    
-                </h1>
-                <h3>
-
-                </h3>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
-                </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
-                </section>
-            </section>
-            <section class="popular-artists">
-                <h1>
-                    
-                </h1>
-                <h3>
-
-                </h3>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
-                </section>
-                <section class="song">
-                    <img src="" alt="">
-                    <p></p>
-                    <p></p>
+                <section class="popular-artists">
+                    <h1>
+                        Artisti più popolari
+                    </h1>
+                    <h3 class="grey">
+                        Più ascolti, più accurati saranno i suggerimenti.
+                    </h3>
+                    <div class="flex justify">
+                        <section class="song">
+                            <img src="imgs/youg.jpeg" alt="">
+                            <p></p>
+                            <p></p>
+                        </section>
+                        <section class="song">
+                            <img src="imgs/einaudi.jpeg" alt="">
+                            <p></p>
+                            <p></p>
+                        </section>
+                    </div>
                 </section>
             </section>
         </main>
     </section>
     <footer class="flex">
         <section class="left-footer flex">
-            <img src="" alt="">
-            <p></p>
-            <p></p>
-            <i></i>
-            <i></i>
+            <img src="imgs/sinister.jpeg" alt="">
+            <section>
+                <p>Sinister</p>
+                <p>Brano Nome</p>
+            </section>
+            <section>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </section>
         </section>
         <section class="center-footer">
             <nav class="flex">
-                <ul>
+                <ul class="flex">
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-shuffle"></i>
                     </li>
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-backward-step"></i>
                     </li>
                     <li>
-                        <button></button>
+                        <i class="fa-regular fa-circle-play"></i>
                     </li>
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-forward-step"></i>
                     </li>
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-rotate-right"></i>
                     </li>
                 </ul>
             </nav>
-            <span></span>
-            <span></span>
-            <span></span>
+            <section class="flex">
+                <p>0:25</p>
+                <p></p>
+                <p>4:35</p>
+            </section>
         </section>
         <section class="right-footer flex">
             <nav>
                 <ul>
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-list-ul"></i>
                     </li>
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-display"></i>
                     </li>
                     <li>
-                        <button></button>
+                        <i class="fa-solid fa-volume-high"></i>
                     </li>
                 </ul>
             </nav>
