@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-/* non funziona */
-.montserrat header {
+body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
@@ -46,12 +45,13 @@ h3 {
 }
 
 /* header */
-/* se metto all'header height: calc(100vh - 80px - footer), l'header esce */
+/* se metto all'header height: calc(100vh - 80px - footer), l'inspector mi segnala invalido e l'header esce */
 header {
     width: 200px;
-    height: 100vh;
+    height: calc(100vh-80px);
     background-color: #000000;
     color: white;
+    position: relative;
 }
 
 .menu img {
@@ -77,12 +77,13 @@ header {
 }
 
 .bottom-header {
+    position: absolute;
     left: 0;
     bottom: 0;
 }
 
 /* main */
-
+/* perché lo vedo vuoto bianco sotto e che unità di misura metto per width per main e top main*/
 .central-main {
     overflow-x: auto;
     overflow-y: auto;
@@ -135,6 +136,10 @@ main > .upgrade {
 
 .song p {
     text-align: center;
+}
+
+.central-main p:first-of-type {
+    font-weight: bold;
 }
 
 /* footer */
