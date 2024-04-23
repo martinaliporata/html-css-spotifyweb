@@ -40,17 +40,14 @@ h3 {
 
 /* header */
 header {
-    height: 90vh;
-    width: 10vw;
+    width: 200px;
+    height: calc(100vh - 80px);
     background-color: #000000;
-    position: fixed;
     color: white;
-    position: relative;
-    z-index: 1;
 }
 
 .menu img {
-    width: 15%;
+    width: 20px;
 }
 
 .menu nav ul li,
@@ -63,29 +60,38 @@ header {
     margin: 1rem 0rem 1rem 1rem;
 }
 
+.small-logo {
+    display: none;
+}
+
 .bottom-header .flex img {
-    width: 10%;
+    width: 20px;
 }
 
 .bottom-header {
-    position: absolute;
     left: 0;
     bottom: 0;
 }
 
 /* main */
-main {
-    width: 90vh;
+
+.central-main {
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: #141922;
+    color: white;
+    height: calc(100vh - 80px);
 }
 
-/* è colpa di questo relative se c'è scrollbar orizzontale */
+/* se metto height in px, si sballa tutto */
 main .top-main {
     background-color: #080b12;
-    height: 10vh;
+    height: 80px;
     width: 90vw;
     display: flex;
     justify-content: right;
     align-items: center;
+    position: fixed;
 }
 
 main button {
@@ -98,14 +104,6 @@ main button {
 
 main > .upgrade {
     background-color: #080b12;
-}
-
-.central-main {
-    overflow: auto;
-    background-color: #141922;
-    height: 80vh;
-    width: 90vw;
-    color: white;
 }
 
 .central-main .nav {
@@ -136,14 +134,14 @@ main > .upgrade {
 /* se metto position:fixed con right e left 0, non si vede */
 footer {
     background-color: #282828;
-    height: 10vh;
-    width: 100vw;
+    height: 80px;
     display: flex;
     justify-content: space-between;
 }
 
 .left-footer img {
     margin-right: 2rem;
+    width: 20%;
 }
 
 i {
@@ -159,10 +157,7 @@ i {
 /* media queries */
 
 @media screen and (max-width:768px) {
-    .prova {
-        display: flex;
-        flex-wrap: wrap;
-    }
+
 }
 
 @media screen and (max-width:576px) {
