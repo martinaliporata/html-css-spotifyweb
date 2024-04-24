@@ -33,8 +33,10 @@
                 </nav>
             </section>
             <section class="playlist">
-                <p class="none">Playlist</p>
-                <i class="none fa-solid fa-square-plus"></i> <p class="none grey">Crea Playlist</p>
+                <p class="none bigger uppercase margin">Playlist</p>
+                <div class="flex create-playlist">
+                    <i class="none fa-solid fa-square-plus"></i> <p class=" bigger grey"> Crea Playlist</p>
+                </div>
                 <nav>
                     <ul class="grey none">
                         <li>
@@ -63,11 +65,11 @@
             </section>
             <section class="bottom-header">
                 <div class="flex">
-                    <img src="imgs/download.svg" alt=""> <p class="grey none">Installa app</p>
+                    <img src="imgs/download.svg" alt=""> <p class="none grey"> Installa app</p>
                 </div>
                 <hr class="none">
-                <div class="flex">
-                    <img src="imgs/profile.svg" alt=""> <p class="none">John Doe</p>
+                <div class="flex prof">
+                    <img class="profile" src="imgs/profile.svg" alt=""> <p class="bigger none margin"> John Doe</p>
                 </div>
             </section>
         </header>
@@ -184,55 +186,59 @@
         <section class="left-footer flex">
             <img src="imgs/sinister.jpeg" alt="">
             <section>
-                <p>Sinister</p>
-                <p>Brano Nome</p>
+                <p class="music-playing">Sinister</p>
+                <p class="song-name grey">Brano Nome</p>
             </section>
-            <section>
+            <section class="footer-icons">
                 <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="folder-icon fa-regular fa-folder"></i>
             </section>
         </section>
-        <section class="center-footer">
-            <nav class="flex">
+        <section class="center-footer flex-column">
+            <!-- <nav>
                 <ul class="flex">
                     <li>
-                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="white fa-solid fa-shuffle"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="white fa-solid fa-backward-step"></i>
                     </li>
                     <li>
-                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="white fa-regular fa-circle-play"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="white fa-solid fa-forward-step"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-rotate-right"></i>
+                        <i class="white fa-solid fa-rotate-right"></i>
                     </li>
                 </ul>
-            </nav>
-            <section>
-                <span>0:25</span>
-                <hr>
-                <span>4:35</span>
+            </nav> -->
+            <section class="flex play">
+                <p class="white">0:25</p>
+                <div class="playbar">
+                    
+                </div>
+                <p class="white">4:35</p>
             </section>
         </section>
         <section class="right-footer flex">
             <nav>
                 <ul class="flex">
                     <li>
-                        <i class="fa-solid fa-list-ul"></i>
+                        <i class="white fa-solid fa-list-ul"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-display"></i>
+                        <i class="white fa-solid fa-display"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-volume-high"></i>
+                        <i class="white fa-solid fa-volume-high"></i>
                     </li>
                 </ul>
             </nav>
-            <p></p>
+            <div class="playbar-small">
+
+            </div>
         </section>
     </footer>
 </body>
