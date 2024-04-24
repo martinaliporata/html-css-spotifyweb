@@ -45,7 +45,7 @@ h3 {
 }
 
 li {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 /* header */
@@ -56,7 +56,7 @@ header {
     background-color: #000000;
     color: white;
     position: relative;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .menu,
@@ -66,7 +66,7 @@ header {
 }
 
 .bigger {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .create-playlist {
@@ -114,8 +114,8 @@ header {
 }
 
 .profile {
-    border: 1px solid gray;
-    background-color: grey;
+    border: 1px solid #686868;
+    background-color: #686868;
     border-radius: 50%;
 }
 
@@ -173,6 +173,10 @@ main > .upgrade {
     width: 100%;
 }
 
+.popular-artists .flex .song img {
+    border-radius: 50%;
+}
+
 .song {
     width: calc((100% / 6) - 1rem);
     margin-top: 1.5rem;
@@ -214,7 +218,7 @@ footer {
 }
 
 .music-playing {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: white;
 }
 
@@ -231,7 +235,7 @@ margin-left: 1rem;
 }
 
 footer i {
-    color: gray;
+    color: #686868;
 }
 
 .center-footer hr {
@@ -242,6 +246,14 @@ footer i {
 
 .center-footer .flex li i {
     margin-left: 1rem;
+}
+
+.play-button {
+    font-size: 1.5rem;
+}
+
+.icon-center-footer {
+    align-items: center;
 }
 
 .right-footer .flex li i {
@@ -257,15 +269,30 @@ footer i {
 }
 
 .playbar {
-    width: 25%;
-    height: 0.2%;
-    background-color: white;
+    width: 325px;
+    height: 3px;
+    background-color: #686868;
     border-radius: 1rem;
     margin: 1rem 2rem;
 }
 
+.internal-playbar {
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
 .playbar-small {
     width: 20%;
+    height: 0.2rem;
+    background-color: #686868;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.internal-playbar-small {
+    width: 25%;
     height: 0.2rem;
     background-color: white;
     border-radius: 1rem;
