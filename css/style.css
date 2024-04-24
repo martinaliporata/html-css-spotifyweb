@@ -39,12 +39,19 @@ h1 {
     margin-left: 1rem;
 }
 
-h3 {
-    margin-left: 1rem;
-    margin-top: 1rem;
+.recently-played h3,
+.recently-played p,
+.john-doe p {
+    margin-top: 0.5rem;
 }
 
-li {
+.john-doe h3,
+.popular-artists h3 {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+li, h3 {
     font-size: 0.7rem;
 }
 
@@ -59,10 +66,23 @@ header {
     font-size: 0.7rem;
 }
 
-.menu,
 .playlist,
-.bottom-header {
+.bottom-header,
+.padding {
     padding-left: 1rem;
+}
+
+.padding-different {
+    padding-left: 0.8rem;
+}
+
+.menu img {
+    width: 20px;
+}
+
+.menu nav ul li,
+.menu nav ul li div.flex {
+    align-items: center;
 }
 
 .bigger {
@@ -82,11 +102,7 @@ header {
 
 .margin {
     margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.menu img {
-    width: 20px;
+    margin-bottom: 0.5rem;
 }
 
 .menu nav ul li,
@@ -103,8 +119,12 @@ header {
     display: none;
 }
 
+.padding-different img {
+    filter: invert(41%) sepia(0%) saturate(32%) hue-rotate(155deg) brightness(98%) contrast(96%);
+}
+
 .bottom-header .flex img {
-    width: 20px;
+    width: 15px;
 }
 
 .bottom-header {
@@ -121,6 +141,27 @@ header {
 
 .prof {
     align-items: center;
+}
+
+.bottom-header hr {
+    width: 220%;
+    border: 1px solid #686868;
+}
+
+.bottom-header p {
+    margin-left: 0.5rem;
+}
+
+.vertical-green-line {
+    width: 3px;
+    height: 25px;
+    background-color: #adff2f;
+}
+
+.horizontal-green-line {
+    width: 30%;
+    height: 3px;
+    background-color: #adff2f;
 }
 
 /* main */
@@ -150,9 +191,11 @@ main button {
     background-color: #080b12;
     color: white;
     border: 1px solid white;
-    border-radius: 0%;
-    padding: 0.5rem 2rem;
+    border-radius: 22px;
+    padding: 0.7rem 2rem;
     margin-right: 1rem;
+    font-weight: bold;
+    font-size: 0.7rem;
 }
 
 main > .upgrade {
@@ -183,8 +226,13 @@ main > .upgrade {
     margin-left: 1rem;
 }
 
-.song p {
+.song p,
+.song h3 {
     text-align: center;
+}
+
+.song p {
+    font-size: 0.9rem;
 }
 
 /* footer */
@@ -205,10 +253,12 @@ footer {
     width: calc(100% / 3);
     justify-content: flex-end;
     align-items: center;
+    margin-right: 1rem;
 }
 
 .left-footer {
     width: calc(100% / 3);
+    align-items: center;
 }
 
 .center-footer {
@@ -300,6 +350,97 @@ footer i {
 
 .center-footer .flex p {
     font-size: 0.7rem;
+}
+
+.circle {
+    display: none;
+}
+
+/* hover */
+
+.song > .hover {
+    display: none;
+}
+
+.song:hover > .hover {
+    display: inline-block;
+}
+
+.song:hover > .img-deleted {
+    display: none;
+}
+
+.img-hover {
+    opacity: 40%;
+}
+
+.hover {
+    position: relative;
+}
+
+.icon-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+main button:hover {
+    font-size: 0.8rem;
+}
+
+.central-main .nav ul li:hover {
+    margin-right: 1.5rem;
+    color: white;
+}
+
+.menu p:hover,
+.playlist p:hover,
+.playlist li:hover,
+.bottom-header p:first-of-type:hover {
+    color: white;
+}
+
+.padding-different img:hover {
+    filter: none;
+}
+
+.create-playlist i:hover {
+    color: white;
+}
+
+.song-name:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.left-footer i:hover {
+    color: white;
+}
+
+.internal-playbar:hover {
+    background-color: #adff2f;
+}
+
+.internal-playbar-small:hover {
+    background-color: #adff2f;
+}
+
+.play-button:hover {
+    font-size: 2rem;
+}
+
+.circle:hover {
+    height: 10px;
+    width: 10px;
+    background-color: #adff2f;
+    border-radius: 50%;
+    position: relative;
+    left: 70px;
+    bottom: 4px;
+    display: inline-block;
 }
 
 /* media queries */

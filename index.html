@@ -18,14 +18,17 @@
                 <nav>
                     <ul>
                         <li class="flex">
-                            <img src="imgs/home.svg" alt="">
-                            <p class="none">Home</p>
+                            <div class="vertical-green-line"></div>
+                            <div class="flex padding-different">
+                                <img class="icon-home" src="imgs/home.svg" alt="">
+                                <p class="none">Home</p>
+                            </div>
                         </li>
-                        <li class="flex grey">
+                        <li class="flex grey padding">
                             <img src="imgs/search.svg" alt="">
                             <p class="none">Cerca</p>
                         </li>
-                        <li class="flex grey">
+                        <li class="flex grey padding">
                             <img src="imgs/libreria.svg" alt="">
                             <p class="none">La tua libreria</p>
                         </li>
@@ -64,12 +67,14 @@
                 </nav>
             </section>
             <section class="bottom-header">
-                <div class="flex">
-                    <img src="imgs/download.svg" alt=""> <p class="none grey"> Installa app</p>
+                <div class="flex download">
+                    <img src="imgs/download.svg" alt="">
+                    <p class="none grey margin"> Installa app</p>
                 </div>
                 <hr class="none">
                 <div class="flex prof">
-                    <img class="profile" src="imgs/profile.svg" alt=""> <p class="bigger none margin"> John Doe</p>
+                    <img class="profile" src="imgs/profile.svg" alt="">
+                    <p class="bigger none margin"> John Doe</p>
                 </div>
             </section>
         </header>
@@ -83,8 +88,9 @@
                 <section class="nav">
                     <nav>
                         <ul class="grey flex uppercase">
-                            <li>
+                            <li class="flex-column play">
                                 In evidenza
+                                <div class="horizontal-green-line"></div>
                             </li>
                             <li>
                                 Podcast
@@ -108,36 +114,60 @@
                     <h1>
                         Recently played
                     </h1>
-                    <div class="prova flex">
+                    <div class="flex">
                         <section class="song">
-                            <img src="imgs/metal_lifting.jpg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/metal_lifting.jpg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/metal_lifting.jpg" alt="">
                             <p>Heavy metal</p>
-                            <p class="grey">Subtitle</p>
+                            <h3 class="grey">Subtitle</h3>
                         </section>
                         <section class="song">
-                            <img src="imgs/stranger.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/stranger.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/stranger.jpeg" alt="">
                             <p>Stranger Things, Vol. <br>1 (a Netflix Original <br>Series Soundtrack)</p>
-                            <p class="grey">Kyle Dixon &amp; Michael Stein</p>
+                            <h3 class="grey">Kyle Dixon &amp; Michael Stein</h3>
                         </section>
                         <section class="song">
-                            <img src="imgs/aquietplace.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/aquietplace.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/aquietplace.jpeg" alt="">
                             <p>A quiet place</p>
-                            <p class="grey">Subtitle</p>
+                            <h3 class="grey">Subtitle</h3>
                         </section>
                         <section class="song">
-                            <img src="imgs/split.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/split.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/split.jpeg" alt="">
                             <p>Split</p>
-                            <p class="grey">Subtitle</p>
+                            <h3 class="grey">Subtitle</h3>
                         </section>
                         <section class="song">
-                            <img src="imgs/cure.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/cure.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/cure.jpeg" alt="">
                             <p>A cure for wellness</p>
-                            <p class="grey">Subtitle</p>
+                            <h3 class="grey">Subtitle</h3>
                         </section>
                         <section class="song">
-                            <img src="imgs/sinister.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/sinister.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/sinister.jpeg" alt="">
                             <p>Sinister</p>
-                            <p class="grey">Subtitle</p>
+                            <h3 class="grey">Subtitle</h3>
                         </section>
                     </div>
                 </section>
@@ -150,11 +180,19 @@
                     </h3>
                     <div class="flex">
                         <section class="song">
-                            <img src="imgs/radar.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/radar.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/radar.jpeg" alt="">
                             <p>Release Radar</p>
                         </section>
                         <section class="song">
-                            <img src="imgs/mixdaily.jpeg" alt="">
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/mixdaily.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/mixdaily.jpeg" alt="">
                             <p>Daily Mix 1</p>
                         </section>
                     </div>
@@ -168,14 +206,18 @@
                     </h3>
                     <div class="flex">
                         <section class="song">
-                            <img src="imgs/youg.jpeg" alt="">
-                            <p></p>
-                            <p></p>
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/youg.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/youg.jpeg" alt="">
                         </section>
                         <section class="song">
-                            <img src="imgs/einaudi.jpeg" alt="">
-                            <p></p>
-                            <p></p>
+                            <div class="hover">
+                                <img class="img-hover" src="imgs/einaudi.jpeg" alt="">
+                                <i class="icon-hover white fa-regular fa-circle-play"></i>
+                            </div>
+                            <img class="img-deleted" src="imgs/einaudi.jpeg" alt="">
                         </section>
                     </div>
                 </section>
@@ -218,7 +260,8 @@
                 <p class="white">0:25</p>
                 <div class="playbar">
                     <div class="internal-playbar">
-
+                        <div class="circle">
+                        </div>
                     </div>
                 </div>
                 <p class="white">4:35</p>
