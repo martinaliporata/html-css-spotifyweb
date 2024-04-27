@@ -19,6 +19,7 @@ body {
 .flex-column{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .grey {
@@ -43,6 +44,11 @@ h1 {
 .recently-played p,
 .john-doe p {
     margin-top: 0.5rem;
+}
+
+.song-section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .john-doe h3,
@@ -208,8 +214,8 @@ main > .upgrade {
     margin-top: 1rem;
 }
 
-.central-main .nav ul li {
-    margin-right: 1.5rem;
+.central-main .nav ul {
+    gap: 0 1.5rem;
 }
 
 .song img {
@@ -265,6 +271,7 @@ footer {
     width: calc(100% / 3);
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .music-playing {
@@ -315,19 +322,21 @@ footer i {
 }
 
 .play {
-    align-items: center;
-}
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
 
 .playbar {
-    width: 325px;
+    width: 100%;
     height: 3px;
     background-color: #686868;
     border-radius: 1rem;
-    margin: 1rem 2rem;
 }
 
 .internal-playbar {
-    width: 80px;
+    width: 15%;
     height: 3px;
     background-color: white;
     border-radius: 1rem;
@@ -350,10 +359,6 @@ footer i {
 
 .center-footer .flex p {
     font-size: 0.7rem;
-}
-
-.circle {
-    display: none;
 }
 
 /* hover */
@@ -382,7 +387,6 @@ footer i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(0%, -50%);
     transform: translate(-50%, -50%);
     font-size: 3rem;
 }
@@ -392,7 +396,6 @@ main button:hover {
 }
 
 .central-main .nav ul li:hover {
-    margin-right: 1.5rem;
     color: white;
 }
 
@@ -429,30 +432,129 @@ main button:hover {
 }
 
 .play-button:hover {
-    font-size: 2rem;
+    transform: scale(1.2);
 }
 
-.circle:hover {
+.internal-playbar {
+    position: relative;
+}
+
+.internal-playbar:hover .circle {
+    opacity: 1;
+}
+
+.circle {
     height: 10px;
     width: 10px;
     background-color: #adff2f;
     border-radius: 50%;
-    position: relative;
-    left: 70px;
-    bottom: 4px;
-    display: inline-block;
+    position: absolute;
+    left: 90%;
+    bottom: -3px;
+    opacity: 0;
 }
 
 /* media queries */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    /* main {
+        max-width: 100%;
+        margin: 0 auto;
+    } */
 
+    .recently-played {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .song {
+        width: calc((100% / 4) - 1rem);
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .nav ul {
+        margin: 1.5rem 0 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem 2.5rem;
+    }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .nav li {
+        padding-bottom: 1rem;
+    }
 
+    .song {
+        width: calc((100% / 2) - 1rem);
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .footer-icons {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .folder-icon {
+        margin: 0;
+    }
+
+    .nav ul {
+        margin: 1.5rem 0 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem 2.5rem;
+    }
+
+    .nav li {
+        padding-bottom: 0;
+    }
 }
 
-@media screen and (min-width:576px){
-    
+/* se metto max-width 0 non funziona */
+@media screen and (max-width: 576px) and (min-width: 0px) {
+    .none {
+        display: none;
+    }
+
+    .small-logo {
+        display: inline-block;
+        width: 36px;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .song {
+        width: calc((100% / 2) - 1rem);
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    header {
+        width: 45px;
+    }
+
+    main {
+        width: calc(100% - 45px);
+    }
+
+    .nav ul {
+        margin: 1.5rem 0 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .footer-icons {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .folder-icon {
+        margin: 0;
+    }
+
 }
